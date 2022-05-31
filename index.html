@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta http-equiv="Cache-Control" content="public, max-age=86400" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body{padding: 0; margin: 0; overflow: hidden;}
+			#externalEventFrame{border: 0; margin: 0; padding: 0; overflow: hidden; width: 100%; height: 98vh;}
+		</style>
+		<title>12° Congresso UFSC de Controladoria e Finan&ccedil;as</title>
+		<meta name="title" content="12° Congresso UFSC de Controladoria e Finan&ccedil;as" />
+		<meta name="keywords" content="12° Congresso UFSC de Controladoria e Finan&ccedil;as" />
+		<meta name="description" content="12° Congresso UFSC de Controladoria e Finan&ccedil;as" />
+	</head>
+	<body onresize="onresize();">
+		<iframe id="externalEventFrame" 
+		        src="">
+		</iframe>
+		<script>
+			function onresize(){
+				var w = window.innerWidth;
+				var h = window.innerHeight;
+				elem.style.width = w + 'px';
+				elem.style.height = h + 'px';
+			}
+			var url = 'https://skallerten.com.br/?event=';
+			url += '02-05-2022-12-Congresso-UFSC-de-Controladoria-e-Financas';
+			var elem = document.getElementById('externalEventFrame');
+			elem.src = url;
+			onresize();
+		</script>
+	</body>
+</html>
